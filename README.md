@@ -1,7 +1,12 @@
-##Qucs library set for Russian components
+# Qucs library set for Russian components
 
-This repo contains library set for Qucs circuit simulator http://qucs.sourceforge.net. The foolowing components are presented:
+## Description
 
+This repo contains library set for Qucs http://qucs.sourceforge.net and Qucs-S https://ra3xdh.github.io circuit simulators. The foolowing components are presented:
+
+ - `AudioIC.lib` different audio amplifier ICs like LM386, TDA2030 etc.
+ - `BJT_exteneded.lib` extended BJT library
+ - `Diodes_Schottky` Schottky diodes models
  - `RusDiodes.lib` Russian diodes and Zener diodes
  - `RusBJT_Part1.lib` `RusBJT_Part2.lib` Russian bipolar transistors
  - `RusJFET.lib` Russian junction field-effect transistors (JFETs)
@@ -10,7 +15,14 @@ This repo contains library set for Qucs circuit simulator http://qucs.sourceforg
  - `OpAmps_544.lib` 544-series Russian opamps
  - `OpAmps.lib` different popular opamps
  - `Comparator.lib` LM339 comparator and others
+ - `Tubes.lib` different vacuum tubes for audio amplifiers (models provided by @olegkapitonov ). This library works with Qucs-S only
+ - `BF998.lib` BF998 and BF998R double gate MOSFET. This library works with Qucs-S only
+ - `PhotovoltaicRelays.lib` Photovoltaic relays. This library works with Qucs-S only
 
-To install libraries copy them all into system Qucs library directory. For example to `$QUCSDIR/share/qucs/libraries` on Linux. `$QUCSDIR` is Qucs installation root (for example /usr/local). 
+## Installation
 
-Regards, Vadim Kuznetsov
+To install libraries copy them all into system Qucs library directory. For example to the `$QUCSDIR/share/qucs/library` on Linux. `$QUCSDIR` is the Qucs installation root (for example `/usr/local`). For Qucs-S default libraries location is `/usr/share/qucs_s/library`. If you are using AppImage or have no root access to your system, copy the libraries to the user libraries directory `$HOME/.qucs/user_lib`
+
+Regards, 
+Vadim Kuznetsov
+
